@@ -35,3 +35,9 @@ As a logged in user navigate to the “Data” tab.<br>
 Create a Data Source by clicking on the orange icon on the right. Then create a variable within that Data Source.<br>
 Take note of the variable’s ID to which you want to send data. For this example we’ll use a variable with the ID: “521d792df91b2816f35c8587”
 Take note of your API key.<br>
+
+Send data to Ubidots
+====================
+<pre class="code-text-only" style="display: none;">
+<code>cd RPi-Ubidots-Tutorial-Python</code></pre>
+Add your specific API key and variable ID to included ubi-test.py
