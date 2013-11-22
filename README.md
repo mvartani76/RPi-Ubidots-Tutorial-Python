@@ -40,4 +40,33 @@ Send data to Ubidots
 ====================
 <pre class="code-text-only" style="display: none;">
 <code>cd RPi-Ubidots-Tutorial-Python</code></pre>
+
 Add your specific API key and variable ID to included ubi-test.py
+<pre class="code-text-only" style="display: none;">
+<code>sudo nano ubi-test.py</code></pre>
+
+<pre class="code-text-only" style="display: none;">
+<code>from ubidots import ApiClient
+import random
+
+#Create an "API" object
+
+api = ApiClient("<b>YOUR API KEY</b>")
+
+#Create a "Variable" object
+
+test_variable = api.get_variable("<b>YOUR VARIABLE ID</b>")
+
+#Here is where you usually put the code to capture the data, either through your GPIO pins or as a calculation. We'll simply put a random value here:
+
+for x in xrange(1,200):
+        test_value = random.randint(1,100)
+        #Write the value to your variable in Ubidots
+        test_variable.save_value({'value':test_value})</code></pre>
+        
+        
+Run Python Script
+=================
+Included script sends 200 random values ranging from 1 to 100 to Ubidots
+<pre class="code-text-only" style="display: none;">
+<code>sudo python ubi-test.py</code></pre>
