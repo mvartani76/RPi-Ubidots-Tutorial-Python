@@ -70,3 +70,5 @@ Run Python Script
 Included script sends 200 random values ranging from 1 to 100 to Ubidots
 <pre class="code-text-only" style="display: none;">
 <code>sudo python ubi-test.py</code></pre>
+If it is working, you should see data like the following in the data window.
+<img src = "http://ubidots.com/docs/_images/raspi-post.png">
