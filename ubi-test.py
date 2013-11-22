@@ -3,11 +3,11 @@ import random
 
 #Create an "API" object
 
-api = ApiClient("12da9991c4229d9daf0c68b1432cf3485cf34165")
+api = ApiClient("YOUR API KEY")
 
 #Create a "Variable" object
 
-test_variable = api.get_variable("528703c5f91b281828a54019")
+test_variable = api.get_variable("YOUR VARIABLE ID")
 
 #Here is where you usually put the code to capture the data, either through your GPIO pins or as a calculation. We'll simply put a random value here:
 
